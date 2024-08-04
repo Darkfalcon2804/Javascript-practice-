@@ -1,26 +1,13 @@
-let num=prompt("Enter then number:");
-// // q1
-// if(num%5==0){
-//     console.log(num,"Is a multie of 5");
 
+ ////Q1.
+// for(let i=1;i<=100;i++){
+//     if(i%2==0) console.log("num=",i);
 // }
-// else {
-//     console.log(num,"is not multiple of 5");
-// }
+    ////Q2.
+    let gamenum=45;
+    let userno = prompt("Guess the game number: ");
 
-// q2
-if(num>=90&&num<=100){
-    console.log("Grade:A");
-}
-else if(num>=70&&num<=89){
-    console.log("Grade:B");
-}
-else if(num>=60&&num<=69){
-    console.log("Grade:C");
-}
-else if(num>=50&&num<=59){
-    console.log("Grade:D");
-}
-else if(num>=0&&num<=49){
-    console.log("Grade:F");
-}
+    while(userno!=gamenum){
+        userno=prompt("You entered wrong number.Guess again: ");
+    }
+    console.log("congratulations,you entered the right number");
